@@ -17,7 +17,7 @@ RUN apt-get update && \
     tar xfz /tmp/kafka-0.7.2-incubating-src.tgz -C /src && \
     cd /src/kafka-0.7.2-incubating-src && \
     ./sbt update && \
-    ./spt package && \
+    ./sbt package && \
     rm /tmp/kafka-0.7.2-incubating-src.tgz.tgz
 
 ADD scripts/start-kafka.sh /usr/bin/start-kafka.sh
